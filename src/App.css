@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-li {
+  @apply text-2xl transition-opacity duration-300;
+}
+
+.sidebar-list {
+  @apply flex items-center justify-start gap-2 font-medium uppercase;
+}

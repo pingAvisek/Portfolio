@@ -7,12 +7,23 @@ import {
   BsTelegram,
   BsFacebook,
 } from "react-icons/bs";
+import { useRef, useState, useEffect } from "react";
+import Home from "../pages/Home";
 
 export default function HeaderLayout() {
+  const headerRef = useRef(null);
+  const [mainHeight, setMainHeight] = useState(0);
+
+  useEffect(() => {
+    const headerHeight = headerRef.current.offsetHeight;
+    const windowHeight = window.innerHeight;
+    setMainHeight(windowHeight - headerHeight);
+  }, []);
+
   return (
     <>
       <div className="header-layout">
-        <header className="p-4 bg-gray-100 shadow-lg ">
+        <header ref={headerRef} className="p-4 bg-primary-50 shadow-lg ">
           <div className="container mx-auto flex justify-between items-center ">
             <Link to="/">
               <Logo />
@@ -50,6 +61,7 @@ export default function HeaderLayout() {
               </ul>
             </nav>
           </div>
+          <Home mainHeight={mainHeight} />
         </header>
       </div>
     </>

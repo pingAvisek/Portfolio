@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .nav-li {
-  @apply text-2xl transition-opacity duration-300;
+  @apply text-2xl transition duration-300 ease-in-out;
 }
 
 .sidebar-list {
   @apply flex items-center justify-start gap-2 font-medium uppercase;
+}
+
+.padding {
+  @apply p-16;
 }

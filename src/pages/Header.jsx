@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
 import {
   BsGithub,
@@ -7,24 +7,13 @@ import {
   BsTelegram,
   BsFacebook,
 } from "react-icons/bs";
-import { useRef, useState, useEffect } from "react";
-import Home from "../pages/Home";
 
-export default function HeaderLayout() {
-  const headerRef = useRef(null);
-  const [mainHeight, setMainHeight] = useState(0);
-
-  useEffect(() => {
-    const headerHeight = headerRef.current.offsetHeight;
-    const windowHeight = window.innerHeight;
-    setMainHeight(windowHeight - headerHeight);
-  }, []);
-
+export default function Header() {
   return (
     <>
       <div className="header-layout">
-        <header ref={headerRef} className="p-4 bg-primary-50 shadow-lg ">
-          <div className="container mx-auto flex justify-between items-center ">
+        <header className="p-4 bg-primary-50 shadow-lg min-w-[3.75rem]">
+          <div className=" container mx-auto flex justify-between items-center ">
             <Link to="/">
               <Logo />
             </Link>
@@ -34,34 +23,39 @@ export default function HeaderLayout() {
                 id="menu"
               >
                 <li className="nav-li hover:text-[#171515]">
-                  <NavLink to="/">
+                  <Link to="https://github.com/pingAvisek" target="_blank">
                     <BsGithub />
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-li hover:text-[#00acee]">
-                  <NavLink to="about">
+                  <Link to="https://twitter.com/pingAvisek" target="_blank">
                     <BsTwitter />
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-li hover:text-primary-700">
-                  <NavLink to="services">
+                  <Link
+                    to="https://www.linkedin.com/in/pingavisek/"
+                    target="_blank"
+                  >
                     <BsLinkedin />
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-li hover:text-[#0088cc]">
-                  <NavLink to="contact">
+                  <Link to="https://t.me/pingAvisek" target="_blank">
                     <BsTelegram />
-                  </NavLink>
+                  </Link>
                 </li>
                 <li className="nav-li hover:text-[#3b5998]">
-                  <NavLink to="contact">
+                  <Link
+                    to="https://www.facebook.com/pingAvisek"
+                    target="_blank"
+                  >
                     <BsFacebook />
-                  </NavLink>
+                  </Link>
                 </li>
               </ul>
             </nav>
           </div>
-          <Home mainHeight={mainHeight} />
         </header>
       </div>
     </>

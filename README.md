@@ -44,7 +44,9 @@ Javascript, Tailwind CSS, React.js
 
 ## Feedback
 
-If you have any feedback, please reach out to me [here.](mailto:ping@abhishekg.com.np)## Color Reference
+If you have any feedback, please reach out to me [here.](mailto:ping@abhishekg.com.np)
+
+## Color Reference
 
 | Color         | Hex                                                              |
 | ------------- | ---------------------------------------------------------------- |

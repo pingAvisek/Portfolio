@@ -10,7 +10,7 @@ export default function Home() {
   }
 
   return (
-    <section className="home padding flex flex-col items-start justify-center w-screen h-screen">
+    <section className="w-screen sm:p-4 h-[calc(100vh-3.75rem)] container mx-auto text-center padding flex flex-col items-center justify-center ">
       <h5 className="font-mono font-semibold text-gray-600 tracking-wide text-lg">
         Hi, It's me
       </h5>
@@ -23,7 +23,7 @@ export default function Home() {
       <h1 className="text-5xl font-bold text-primary-600 opacity-100 py-4">
         I build things for the Internet.
       </h1>
-      <p className="py-4 mb-4 text-gray-700 w-[58ch] font-medium">
+      <p className="py-4 mb-4 text-gray-700 max-w-[58ch] font-medium">
         Motivated and enthusiastic learner with a passion for frontend web
         development. Problem solver, task-oriented, and always eager to learn.
       </p>

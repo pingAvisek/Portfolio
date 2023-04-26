@@ -14,17 +14,14 @@ export default function Header() {
               <Logo />
             </Link>
             <nav>
-              <ul
-                className="gap-5 text-gray-500 justify-center items-center flex"
-                id="menu"
-              >
-                {/* Mapping through the navLinkArray */}
+              <ul className="gap-5 text-gray-500 justify-center items-center flex">
                 {navLinkArray.map((navLink, index) => (
-                  <li
-                    className={`nav-li hover:text-[${navLink.color}]`}
-                    key={index}
-                  >
-                    <Link target="_blank" to={navLink.url}>
+                  <li className="nav-li" key={index}>
+                    <Link
+                      title={navLink.title}
+                      target="_blank"
+                      to={navLink.url}
+                    >
                       {navLink.icons}
                     </Link>
                   </li>

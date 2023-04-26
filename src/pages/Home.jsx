@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   const resumeURL =
-    "https://drive.google.com/file/d/1BLibHCK-2yyrrzygLTQnfcTfCxQT_RkPUxexig0cHVA/preview";
+    "https://docs.google.com/document/u/0/export?format=pdf&id=1BLibHCK-2yyrrzygLTQnfcTfCxQT_RkPUxexig0cHVA";
 
   function previewResume() {
     window.open(`${resumeURL}`, "_blank");
@@ -20,7 +20,7 @@ export default function Home() {
       >
         Abhishek Ghimire.
       </h1>
-      <h1 className="text-5xl font-bold text-primary-600 opacity-100 py-4">
+      <h1 className="text-5xl font-bold text-primary-600 opacity-100">
         I build things for the Internet.
       </h1>
       <p className="py-4 mb-4 text-gray-700 max-w-[58ch] font-medium">

@@ -12,25 +12,25 @@ export default function Home() {
   }
 
   return (
-    <section className="home w-full h-screen -z-10 ">
+    <section className="home w-full -z-10 container mx-auto">
       <div className="absolute z-10 ">
         <Design />
       </div>
 
-      <div className="hero-content relative sm:p-4 w-full h-screen container mx-auto text-center padding flex flex-col items-center justify-center">
-        <p className="font-mono font-semibold text-gray-600 tracking-wide text-lg">
+      <div className="hero-content relative sm:p-4 w-full h-screen  text-center padding flex flex-col items-center justify-center">
+        <p className="font-mono  relative z-50 font-semibold text-gray-300 tracking-wide text-lg">
           Hi, It's me
         </p>
         <h1
           title="@pingAvisek"
-          className="text-5xl font-bold py-4 text-primary-700"
+          className="text-5xl relative z-50 font-bold py-4 text-primary-500"
         >
           Abhishek Ghimire.
         </h1>
-        <h1 className="text-5xl font-bold text-primary-600 opacity-100">
+        <h1 className="text-5xl relative z-50 font-bold text-primary-600">
           I build things for the Internet.
         </h1>
-        <p className="py-4 mb-4 text-gray-400 max-w-[58ch] font-medium">
+        <p className="py-4 relative z-50 mb-4 text-gray-300 max-w-[58ch] font-medium">
           Motivated and enthusiastic learner with a passion for frontend web
           development. Problem solver, task-oriented, and always eager to learn.
         </p>
@@ -39,7 +39,7 @@ export default function Home() {
           onClick={previewResume}
           rel="noopener noreferrer"
           title="Download Resume"
-          className="uppercase font-medium tracking-wide flex items-center justify-center gap-2 bg-primary-700 text-white py-2 px-3 border-2 rounded-md transition hover:bg-primary-900 relative z-50"
+          className="uppercase font-medium tracking-wide flex items-center justify-center gap-2 bg-primary-700 text-white py-2 px-3 border-0 rounded-md transition hover:bg-primary-900 relative z-50"
         >
           <span>resume</span>
           <BiCloudDownload size="1.3rem" />

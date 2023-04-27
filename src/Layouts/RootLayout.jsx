@@ -9,20 +9,6 @@ export default function RootLayout() {
       <Header />
       <Home />
       <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
     </>
   );
 }

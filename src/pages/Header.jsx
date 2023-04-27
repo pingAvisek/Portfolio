@@ -8,13 +8,13 @@ export default function Header() {
   return (
     <>
       <div className="header-layout">
-        <header className="p-4 bg-transparent shadow-lg min-w-[3.75rem]">
+        <header className=" p-4 min-w-[3.75rem]">
           <div className=" container mx-auto flex justify-between items-center ">
             <Link to="/">
               <Logo />
             </Link>
             <nav>
-              <ul className="gap-5 text-gray-500 justify-center items-center flex">
+              <ul className="gap-5 text-gray-900 justify-center items-center flex">
                 {navLinkArray.map((navLink, index) => (
                   <li className="nav-li" key={index}>
                     <Link

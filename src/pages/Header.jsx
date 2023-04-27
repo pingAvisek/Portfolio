@@ -8,23 +8,20 @@ export default function Header() {
   return (
     <>
       <div className="header-layout">
-        <header className="p-4 bg-primary-50 shadow-lg min-w-[3.75rem]">
+        <header className="p-4 bg-transparent shadow-lg min-w-[3.75rem]">
           <div className=" container mx-auto flex justify-between items-center ">
             <Link to="/">
               <Logo />
             </Link>
             <nav>
-              <ul
-                className="gap-5 text-gray-500 justify-center items-center flex"
-                id="menu"
-              >
-                {/* Mapping through the navLinkArray */}
+              <ul className="gap-5 text-gray-500 justify-center items-center flex">
                 {navLinkArray.map((navLink, index) => (
-                  <li
-                    className={`nav-li hover:text-[${navLink.color}]`}
-                    key={index}
-                  >
-                    <Link target="_blank" to={navLink.url}>
+                  <li className="nav-li" key={index}>
+                    <Link
+                      title={navLink.title}
+                      target="_blank"
+                      to={navLink.url}
+                    >
                       {navLink.icons}
                     </Link>
                   </li>

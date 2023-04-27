@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       <div className="header-layout">
-        <header className="p-4 bg-primary-50 shadow-lg min-w-[3.75rem]">
+        <header className="p-4 bg-transparent shadow-lg min-w-[3.75rem]">
           <div className=" container mx-auto flex justify-between items-center ">
             <Link to="/">
               <Logo />

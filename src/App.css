@@ -47,7 +47,7 @@
 }
 
 .heading {
-  @apply text-2xl pt-8 font-bold uppercase text-primary-700 inline-block relative;
+  @apply text-2xl pt-8 font-bold uppercase text-primary-700 mx-auto inline-block relative;
 }
 
 .heading::after {

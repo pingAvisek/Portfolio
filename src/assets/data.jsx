@@ -33,12 +33,6 @@ export default [
         slug: "telegram",
         title: "Telegram",
       },
-      {
-        icons: <BsFacebook color="#3b5998" />,
-        url: "https://www.facebook.com/pingAvisek",
-        slug: "facebook",
-        title: "Facebook",
-      },
     ],
   },
 ];

@@ -8,8 +8,8 @@ export default function Header() {
   return (
     <>
       <div className="header-layout">
-        <header className=" p-4 min-w-[3.75rem]">
-          <div className=" container mx-auto flex justify-between items-center ">
+        <header className="min-w-[3.75rem]">
+          <div className="p-4 container mx-auto flex justify-between items-center ">
             <Link to="/">
               <Logo />
             </Link>

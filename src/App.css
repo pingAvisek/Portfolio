@@ -44,5 +44,39 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary-700;
-  cursor: none;
+}
+
+.heading {
+  @apply text-2xl pt-8 font-bold uppercase text-primary-700 inline-block relative;
+}
+
+.heading::after {
+  /* @apply absolute w-20px bg-gray-500 -z-10; */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 2px;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  background: #0072b1;
+  z-index: -2;
+}
+
+.gap {
+  @apply p-4 sm:p-10 text-center;
+}
+
+.paragraph {
+  @apply text-base font-medium text-gray-500 py-6 max-w-[58ch] m-auto;
+}
+
+.paragraph-sharp {
+  @apply text-base text-justify font-medium text-gray-800 py-6;
+}
+
+.highlight {
+  @apply text-primary-700;
 }

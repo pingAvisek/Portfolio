@@ -9,6 +9,8 @@ export default function RootLayout() {
       <Header />
       <Home />
       <About />
+      <Header />
+      <Home />
     </>
   );
 }

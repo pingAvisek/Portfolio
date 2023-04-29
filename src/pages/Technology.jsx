@@ -25,12 +25,15 @@ export default function Technology() {
             For client-side applications
           </h2>
           <div className="icons text-5xl p-2 flex items-center justify-center gap-4 flex-wrap">
-            <AiFillHtml5 color="#f06529" />
-            <FaCss3Alt color="#264de4" />
-            <SiJavascript color="#F0DB4F" style={{ background: "#323330" }} />
-            <SiTailwindcss color="#3B82F6" />
-            <DiReact color="#61dbfb " />
-            <SiJquery color="#0769ad" />
+            <AiFillHtml5 color="#f06529" title="HTML5" />
+            <FaCss3Alt color="#264de4" title="CSS3" />
+            <SiJavascript
+              color="#F0DB4F"
+              title="JavaScript"
+              style={{ background: "#323330" }}
+            />
+            <SiTailwindcss color="#3B82F6" title="TailwindCSS" />
+            <DiReact color="#61dbfb" title="React.js" />
           </div>
         </div>
 
@@ -39,12 +42,11 @@ export default function Technology() {
             Others and More!
           </h2>
           <div className="icons text-5xl p-2 flex items-center justify-center gap-4 flex-wrap">
-            <DiNpm color="#cb3837 " />
-            <DiGit color="#f34f29" />
-            <AiFillGithub color="#171515 " />
-            <SiNetlify color="#3b83f6" />
-            <FcLinux />
-            <SiVisualstudiocode color="#0078d7 " />
+            <DiGit color="#f34f29" title="Git" />
+            <AiFillGithub color="#171515 " title="GitHub" />
+            <SiNetlify color="#20C2B9" title="Netlify" />
+            <FcLinux title="Linux" />
+            <SiVisualstudiocode color="#0078d7 " title="Visual Studio Code" />
           </div>
         </div>
       </div>

@@ -80,3 +80,90 @@
 .highlight {
   @apply text-primary-700;
 }
+
+label {
+  @apply text-primary-950 capitalize font-medium tracking-wide text-sm py-4;
+}
+
+.contact .icon-input {
+  @apply flex items-center justify-start gap-0 border-2 border-primary-200 my-2 p-0 text-xs bg-primary-100 rounded-sm;
+}
+
+.contact input,
+.contact textarea {
+  @apply bg-transparent w-full p-2;
+}
+
+.contact textarea {
+  @apply bg-primary-100 border-0  rounded-sm;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  @apply border-0 outline-none;
+}
+
+.contact ::placeholder {
+  @apply text-xs text-gray-400;
+}
+
+/* Plain CSS for btn  */
+
+button {
+  margin: 1rem 0;
+  font-family: inherit;
+  font-size: 14px;
+  @apply bg-primary-700;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+/* if class = reset  */
+button:hover svg[class="reset-svg"] {
+  transform: translateX(1.2em) rotate(0deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}

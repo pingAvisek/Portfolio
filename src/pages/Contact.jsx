@@ -1,4 +1,7 @@
 import { Form } from "react-router-dom";
+import { BsFillPersonFill } from "react-icons/bs";
+import { MdAlternateEmail } from "react-icons/md";
+import { BiMessageAltDetail } from "react-icons/bi";
 
 export default function Contact() {
   return (
@@ -14,28 +17,39 @@ export default function Contact() {
         className="flex flex-col max-w-[640px] mx-auto text-left"
       >
         <label htmlFor="fullname">Full name:</label>
-        <input
-          className="capitalize"
-          type="text"
-          name="fullname"
-          placeholder="Enter your coolname"
-          required
-        />{" "}
+        <div className="icon-input">
+          <BsFillPersonFill className="text-xl ml-2  hidden sm:block text-primary-950" />
+          <input
+            className="capitalize "
+            type="text"
+            name="fullname"
+            placeholder="Enter your coolname"
+            required
+          />
+        </div>
         <label htmlFor="email">Email:</label>
-        <input
-          type="text"
-          name="email"
-          placeholder="Enter a valid email"
-          required
-        />
+        <div className="icon-input ">
+          <MdAlternateEmail className="text-xl ml-2 hidden sm:block text-primary-950" />
+          <input
+            type="text"
+            name="email"
+            placeholder="coolusername@hotmail.com"
+            required
+          />
+        </div>
         <label htmlFor="message">Message:</label>
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Hi Abhishek, I have seen your portfolio and I..."
-        ></textarea>
+        <div className="icon-input items-start">
+          <BiMessageAltDetail className="text-xl ml-2 mt-2 hidden sm:block text-primary-950" />
+          <textarea
+            name="message"
+            rows="5"
+            required
+            minLength={10}
+            placeholder="Hi Abhishek, I have seen your portfolio and I..."
+          ></textarea>
+        </div>
         <div className="btn-area flex text-black items-center justify-start gap-4">
-          <button type="submit" className="bg-primary-700 hover:bg-primary-800">
+          <button type="submit" className="bg-primary-900 hover:bg-primary-800">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg
@@ -57,7 +71,7 @@ export default function Contact() {
 
           <button
             type="reset"
-            className="border-primary-700 text-gray-100 border-2 bg-white"
+            className="bg-primary-700 text-gray-100 border-2 border-primary-700"
           >
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">

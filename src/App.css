@@ -85,14 +85,22 @@ label {
   @apply text-primary-950 capitalize font-medium tracking-wide text-sm py-4;
 }
 
+.contact .icon-input {
+  @apply flex items-center justify-start gap-0 border-2 border-primary-200 my-2 p-0 text-xs bg-primary-100 rounded-sm;
+}
+
 .contact input,
 .contact textarea {
-  @apply p-2 bg-primary-100 border-2 border-primary-200 rounded-sm text-xs;
+  @apply bg-transparent w-full p-2;
+}
+
+.contact textarea {
+  @apply bg-primary-100 border-0  rounded-sm;
 }
 
 .contact input:focus,
 .contact textarea:focus {
-  @apply border-2 border-primary-700 outline-none;
+  @apply border-0 outline-none;
 }
 
 .contact ::placeholder {

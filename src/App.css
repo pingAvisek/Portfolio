@@ -169,7 +169,7 @@ button:active {
 }
 
 .message-box {
-  @apply rounded-sm text-sm text-gray-900  font-medium py-2 px-2;
+  @apply rounded-sm text-sm text-gray-900  font-medium py-2 px-2 max-w-[640px] mx-auto;
 }
 
 /* Loader */

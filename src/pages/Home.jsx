@@ -12,12 +12,12 @@ export default function Home() {
   }
 
   return (
-    <section className="home w-full -z-10 container mx-auto">
-      <div className="absolute z-10 ">
+    <section className="home w-full h-screen -z-10 container mx-auto">
+      <div className="absolute z-30  ">
         <Design />
       </div>
 
-      <div className="hero-content relative sm:p-4 w-full h-screen  text-center padding flex flex-col items-center justify-center">
+      <div className="hero-content  sm:p-4 w-full h-screen  text-center padding flex flex-col items-center justify-center">
         <p className="font-mono  relative z-50 font-semibold text-gray-300 tracking-wide text-lg">
           Hi, It's me
         </p>
@@ -42,7 +42,7 @@ export default function Home() {
           className="uppercase font-medium tracking-wide flex items-center justify-center gap-2 bg-primary-700 text-white py-2 px-3 border-0 rounded-md transition hover:bg-primary-900 relative z-50"
         >
           <span>resume</span>
-          <BiCloudDownload size="1.3rem" />
+          <BiCloudDownload size={"1.4rem"} />
         </Link>
       </div>
     </section>

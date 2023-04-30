@@ -110,7 +110,7 @@ label {
 /* Plain CSS for btn  */
 
 button {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-family: inherit;
   font-size: 14px;
   @apply bg-primary-700;
@@ -165,5 +165,44 @@ button:active {
 
   to {
     transform: translateY(-0.1em);
+  }
+}
+
+.message-box {
+  @apply rounded-sm text-sm text-gray-900  font-medium py-2 px-2;
+}
+
+/* Loader */
+
+.lds-hourglass {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 20px solid #0072b1;
+  border-color: #0072b1 transparent #0072b1 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
   }
 }

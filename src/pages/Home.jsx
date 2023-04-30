@@ -13,7 +13,9 @@ export default function Home() {
 
   return (
     <section className="home w-full -z-10 container mx-auto">
-      <div className="absolute z-10 ">{/* <Design /> */}</div>
+      <div className="absolute z-10 ">
+        <Design />
+      </div>
 
       <div className="hero-content relative sm:p-4 w-full h-screen  text-center padding flex flex-col items-center justify-center">
         <p className="font-mono  relative z-50 font-semibold text-gray-300 tracking-wide text-lg">

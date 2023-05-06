@@ -8,13 +8,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import NotFound from "./pages/NotFound";
+// Importing Layout
 import RootLayout from "./Layouts/RootLayout";
-import Home from "./pages/Home";
+import AllComponents from "./Layouts/AllComponents";
+import NotFound from "./pages/NotFound";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<RootLayout />} />
+      <Route index element={<AllComponents />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )

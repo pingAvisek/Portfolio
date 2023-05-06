@@ -1,7 +1,6 @@
-import React from "react";
+import Design from "../components/Design";
 import { Link } from "react-router-dom";
 import { BiCloudDownload } from "react-icons/bi";
-import Design from "../components/Design";
 
 export default function Home() {
   const resumeURL =
@@ -27,9 +26,6 @@ export default function Home() {
         >
           Abhishek Ghimire.
         </h1>
-        {/* <h1 className="text-5xl relative z-50 font-bold text-primary-600">
-          I build things for the Internet.
-        </h1> */}
         <p className="relative z-50 mb-4 text-gray-500 max-w-[58ch]">
           Motivated and enthusiastic learner with a passion for frontend web
           development. Problem solver, task-oriented, and always eager to learn.

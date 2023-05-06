@@ -7,7 +7,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiNetlify } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
 import { SiVisualstudiocode } from "react-icons/si";
-import { SiJquery } from "react-icons/si";
 
 export default function Technology() {
   return (

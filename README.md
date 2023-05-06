@@ -55,7 +55,3 @@ If you have any feedback, please reach out to me [here.](mailto:ping@abhishekg.c
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-## Bugs
-
-- I was not able to change the colors of navlinks of with respective brand color while hovering only as I heard Tailwind CSS can't compile dynamic classes. Hope to fix it soon. For now I have given the color to react icons component itself.

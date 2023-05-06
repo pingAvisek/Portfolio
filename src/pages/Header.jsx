@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
-import data from "../assets/data";
+import Nav from "../components/Nav";
 
 export default function Header() {
-  const navLinkArray = data[0].navLinks;
-
   return (
     <>
       <div className="header-layout">
@@ -13,21 +11,7 @@ export default function Header() {
             <Link to="/">
               <Logo />
             </Link>
-            <nav>
-              <ul className="gap-5 text-gray-900 justify-center items-center flex">
-                {navLinkArray.map((navLink, index) => (
-                  <li className="nav-li" key={index}>
-                    <Link
-                      title={navLink.title}
-                      target="_blank"
-                      to={navLink.url}
-                    >
-                      {navLink.icons}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <Nav />
           </div>
         </header>
       </div>

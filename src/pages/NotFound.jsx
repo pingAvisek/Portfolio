@@ -2,17 +2,16 @@ import { NavLink } from "react-router-dom";
 
 export default function NotFound() {
   return (
-    <div>
-      <h2>Page not found!</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia alias
-        cupiditate ad nostrum doloribus iste tempora quisquam excepturi
-        repellat, fugit cumque dolore magni possimus inventore neque provident!
-        Sunt, quo eos?
-      </p>
-
-      <p>
-        Go to the <NavLink to="/">Homepage</NavLink>.
+    <div className="not-found container text-center h-[60vh] flex justify-center items-center flex-col">
+      <h1 className="uppercase font-bold text-3xl mb-0 py-5 text-primary-700">
+        Page not found!
+      </h1>
+      <p className="mb-4">Seems you are lost somewhere.</p>
+      <p className="mb-4">
+        Go to the{" "}
+        <NavLink to="/" className="text-primary-700 font-medium uppercase ">
+          Homepage.
+        </NavLink>
       </p>
     </div>
   );

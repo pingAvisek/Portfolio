@@ -73,6 +73,7 @@ export default function Contact() {
           <input
             className="capitalize "
             type="text"
+            minLength={5}
             name="fullname"
             placeholder="Enter your coolname"
             autoComplete="off"

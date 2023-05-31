@@ -4,7 +4,7 @@ import { BiCloudDownload } from "react-icons/bi";
 
 export default function Home() {
   const resumeURL =
-    "https://docs.google.com/document/u/0/export?format=pdf&id=1BLibHCK-2yyrrzygLTQnfcTfCxQT_RkPUxexig0cHVA";
+    "https://docs.google.com/document/u/0/export?format=pdf&id=1w-Ih6e3wFuIQeWAzItVUx7HzpPoFyT-3iI05oU4zOf0";
 
   function previewResume() {
     window.open(`${resumeURL}`, "_blank");
